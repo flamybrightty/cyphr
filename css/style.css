@@ -1,0 +1,95 @@
+@import url("config.css");
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* max-width: 1200px; */
+}
+
+body
+{
+    padding: 0px;
+    /* background-color: white; */
+    /* background-color: black; */
+    /* max-width: 1200px; */
+}
+
+.container
+{
+    margin: 0 auto;
+    /* background-color: white; */
+    /* background-color: black; */
+    /* max-width: 1200px; */
+    width: 100%;
+}
+
+.main_app{
+    margin: 40px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.promo_block {
+    border-radius: 20px;
+    width: 500px;
+    height: 500px;
+    background-color: black;
+}
+
+.solution{
+    padding: 30px;
+    font-size: 50px;
+    font-family: Manrope-ExtraBold, Helvetica;
+    color: var(--extra-text-color);
+}
+
+.materia_tech_logo{
+    padding: 30px;
+}
+
+.materia_tech_logo img{
+    width: 30px;
+    height: 100%;
+}
+
+.powered_by_text{
+    padding: 30px;
+    font-size: 10px;
+    font-family: Manrope-ExtraBold, Helvetica;
+    color: var(--extra-text-color);
+}
+
+.tech_block {
+    border-radius: 20px;
+    width: 500px;
+    height: 500px;
+    background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.test{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+    font-size: 50px;
+    font-family: Manrope-ExtraBold, Helvetica;
+    color: var(--main-text-color);
+}
