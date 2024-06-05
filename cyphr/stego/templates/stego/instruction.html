@@ -1,0 +1,44 @@
+{% extends 'main/layout.html' %}
+
+{% load static %}
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'css/info.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font_style.css' %}">
+{% endblock  %}
+
+{% block content %}
+    <div class="top_name_box">
+        <div class="cyphr_logo">
+            <a href="{% url 'stego:stego' %}">
+                <img src="{% static 'img/cyphr_logo_black.webp' %}" alt="Cypher logo">
+            </a>
+        </div>
+        <div class="cyphr_name">
+            <a href="{% url 'stego:stego' %}">
+                Cyphr
+            </a>
+        </div>
+    </div>
+
+    <div class="text_box">
+        Для работы с Cyphr STEGO следуйте этим простым шагам: загрузите изображение через веб-интерфейс, введите текстовую информацию, которую хотите защитить, и нажмите кнопку "Обработать изображение". Приложение скрывает текст с помощью стеганографии. После завершения обработки вы сможете скачать изображение, которое выглядит как обычное, но содержит скрытую информацию. Для извлечения и расшифровки данных загрузите обработанное изображение обратно в Cyphr.
+    </div>
+
+    <div class="footer">
+        <div class="powered_box">
+            <div class="materia_tech_logo">
+                <img src="{% static 'img/materia_tech_logo_white.webp' %}" alt="Materia Tech Logo">
+            </div>
+            <div class="powered_by_text">
+                Powered by <br>
+                Materia Tech
+            </div>
+        </div>
+        <div class="mail">
+            <a href="mailto:materia.mgmt@yandex.ru?subject=Cyphr">
+                materia.mgmt@yandex.ru
+            </a>
+        </div>
+    </div>
+{% endblock %}

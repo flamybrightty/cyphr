@@ -1,0 +1,42 @@
+{% extends 'main/layout.html' %}
+
+{% load static %}
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'css/stego.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font_style.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="main_app">
+        <div class="promo_block">
+            <div class="solution">
+                Cyphr <br>
+                STEGO
+            </div>
+            <div class="powered_box">
+                <div class="materia_tech_logo">
+                    <img src="{% static 'img/materia_tech_logo_black.webp' %}" alt="Materia Tech Logo">
+                </div>
+                <div class="powered_by_text">
+                    Powered by <br>
+                    Materia Tech
+                </div>
+            </div>
+        </div>
+        <div class="promo_block">
+            <div class="form">
+                <img src="{{ image_url }}" alt="Secret Image"> <br><br>
+                <div>
+                    <a href="{{ image_url }}" download>Скачать изображение</a>
+                </div>
+                <div>
+                    <a href="{% url 'stego:hide' %}">Снова сокрыть текст</a>
+                </div>
+                <div>
+                    <a href="{% url 'stego:extract' %}">Извлечь текст</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

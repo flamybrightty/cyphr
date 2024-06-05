@@ -1,0 +1,12 @@
+:root {
+    --main-text-color: black;
+    --extra-text-color : white;
+    --arrow-size-default: 35px;
+    --arrow-size-after: 45px;
+    --arrow-double-size-default: 60px;
+    --arrow-double-size-after: 70px;
+    --arrow-margin: 15px;
+    --arrow-transition-time: 0.4s;
+    --block-transition-time: 0.3s;
+    --default-gap: 30px;
+}

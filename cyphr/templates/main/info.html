@@ -1,0 +1,44 @@
+{% extends 'main/layout.html' %}
+
+{% load static %}
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'css/info.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font_style.css' %}">
+{% endblock  %}
+
+{% block content %}
+    <div class="top_name_box">
+        <div class="cyphr_logo">
+            <a href="../">
+                <img src="{% static 'img/cyphr_logo_black.webp' %}" alt="Cypher logo">
+            </a>
+        </div>
+        <div class="cyphr_name">
+            <a href="../">
+                Cyphr
+            </a>
+        </div>
+    </div>
+
+    <div class="text_box">
+        Cyphr — инновационное веб-приложение, разработанное для защиты конфиденциальной информации с помощью метода шифрования AES128. С помощью Cyphr вы сможете безопасно передавать и хранить данные, встроенные в изображения, делая их невидимыми для посторонних лиц. Этот надежный инструмент обеспечит вам максимальную конфиденциальность и защиту ваших данных от несанкционированного доступа. Убедитесь сами в эффективности Cyphr!
+    </div>
+
+    <div class="footer">
+        <div class="powered_box">
+            <div class="materia_tech_logo">
+                <img src="{% static 'img/materia_tech_logo_white.webp' %}" alt="Materia Tech Logo">
+            </div>
+            <div class="powered_by_text">
+                Powered by <br>
+                Materia Tech
+            </div>
+        </div>
+        <div class="mail">
+            <a href="mailto:materia.mgmt@yandex.ru?subject=Cyphr">
+                materia.mgmt@yandex.ru
+            </a>
+        </div>
+    </div>
+{% endblock %}

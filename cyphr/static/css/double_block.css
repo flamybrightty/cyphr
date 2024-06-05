@@ -1,0 +1,89 @@
+@import url("config.css");
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* max-width: 1200px; */
+}
+
+body
+{
+    padding: 0px;
+    /* background-color: white; */
+    /* background-color: black; */
+    /* max-width: 1200px; */
+}
+
+.container
+{
+    margin: 0 auto;
+    /* background-color: white; */
+    /* background-color: black; */
+    /* max-width: 1200px; */
+    width: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.main_app{
+    margin: 40px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.product_name{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    font-size: 60px;
+    font-family: Manrope-ExtraBold, Helvetica;
+    color: var(--extra-text-color);
+}
+
+.promo_block {
+    /* position: relative; */
+    border-radius: 20px;
+    width: 500px;
+    height: 500px;
+    background-color: black;
+    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    font-size: 35px;
+    font-family: Manrope-ExtraBold, Helvetica;
+    color: var(--extra-text-color);
+}
+
+.promo_block{
+    border-radius: 20px;
+    background-color: var(--main-text-color);
+    position: relative;
+    transition: var(--block-transition-time);
+}
+
+.promo_block:hover{
+    transform: translate(0, -5px);
+}
+
+.promo_block:hover .arrow_box img{
+    transition: var(--arrow-transition-time);
+    width: var(--arrow-double-size-after);
+}
+
+.arrow_box img{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: var(--arrow-margin);
+    width: var(--arrow-double-size-default);
+    transition: var(--arrow-transition-time);
+}

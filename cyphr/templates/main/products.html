@@ -1,0 +1,35 @@
+{% extends 'main/layout.html' %}
+
+{% load static %}
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'css/double_block.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font_style.css' %}">
+{% endblock  %}
+
+{% block content %}
+    <div class="main_app">
+        <div class="promo_block">
+            <div class="product_name">
+                Cyphr <br>
+                STEGO
+            </div>
+            <div class="arrow_box">
+                <a href="{% url 'stego:stego' %}" target="_blank">
+                    <img src="{% static 'img/arrow_white.webp' %}" alt="Info page">
+                </a>
+            </div>
+        </div>
+        <div class="promo_block">
+            <div class="product_name">
+                Cyphr <br>
+                AES128
+            </div>
+            <div class="arrow_box">
+                <a href="{% url 'aes128:aes128' %}" target="_blank">
+                    <img src="{% static 'img/arrow_white.webp' %}" alt="Info page">
+                </a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

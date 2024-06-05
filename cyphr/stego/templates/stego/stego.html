@@ -1,0 +1,67 @@
+{% extends 'main/layout.html' %}
+
+{% load static %}
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'css/stego.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font_style.css' %}">
+{% endblock  %}
+
+{% block content %}
+    <div class="main_app">
+        <div class="promo_block">
+            <div class="solution">
+                Cyphr <br>
+                STEGO
+            </div>
+            <div class="powered_box">
+                <div class="materia_tech_logo">
+                    <img src="{% static 'img/materia_tech_logo_black.webp' %}" alt="Materia Tech Logo">
+                </div>
+                <div class="powered_by_text">
+                    Powered by <br>
+                    Materia Tech
+                </div>
+            </div>
+        </div>
+        <div class="tech_block">
+            <div class="cyphr_info">
+                <div class="name_box">
+                    {% comment %} <div class="cyphr_logo">
+                        <img src="{% static 'img/cyphr_logo_white.webp' %}" alt="Cyphr logo">
+                    </div> {% endcomment %}
+                    <div class="cyphr_name">
+                        Инструкция
+                    </div>
+                </div>
+                <div class="arrow_box">
+                    <a href="{% url 'stego:instruction' %}">
+                        <img src="{% static 'img/arrow_white.webp' %}" alt="Info page">
+                    </a>
+                </div>
+            </div>
+            <div class="products">
+                <div class="cyphr_stego">
+                    <div class="product_name">
+                        Сокрыть
+                    </div>
+                    <div class="arrow_box">
+                        <a href="{% url 'stego:hide' %}" target="_blank">
+                            <img src="{% static 'img/arrow_white.webp' %}" alt="Stegonagraphy product">
+                        </a>
+                    </div>
+                </div>
+                <div class="cyphr_aes">
+                    <div class="product_name">
+                        Извлечь
+                    </div>
+                    <div class="arrow_box">
+                        <a href="{% url 'stego:extract' %}" target="_blank">
+                            <img src="{% static 'img/arrow_white.webp' %}" alt="AES128 product">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

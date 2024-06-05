@@ -1,0 +1,47 @@
+{% extends 'main/layout.html' %}
+
+{% load static %}
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'css/info.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font_style.css' %}">
+{% endblock  %}
+
+{% block content %}
+
+    <! -- gEvnesw4ytvC+6kA7wfL9RHcudz0S8rvga6wTkP36xBXczRI8LgpuQLiSCAgEEjywlHcoCoymzS/K2t0Pd5KZjHxTl0KGz4= -- !>
+
+    <div class="top_name_box">
+        <div class="cyphr_logo">
+            <a href="{% url 'stego:stego' %}">
+                <img src="{% static 'img/cyphr_logo_black.webp' %}" alt="Cypher logo">
+            </a>
+        </div>
+        <div class="cyphr_name">
+            <a href="{% url 'stego:stego' %}">
+                Cyphr
+            </a>
+        </div>
+    </div>
+
+    <div class="text_box">
+        Для работы с Cyphr AES128 следуйте этим простым шагам: введите текст, который хотите зашифровать, через веб-интерфейс, введите ключ шифрования и нажмите кнопку "Зашифровать". Приложение использует алгоритм AES128 для шифрования вашего текста, обеспечивая его надежную защиту. После завершения процесса вы сможете скопировать зашифрованный текст. Для расшифровки текста загрузите его обратно в Cyphr, введите тот же ключ шифрования и нажмите кнопку "Расшифровать".
+    </div>
+
+    <div class="footer">
+        <div class="powered_box">
+            <div class="materia_tech_logo">
+                <img src="{% static 'img/materia_tech_logo_white.webp' %}" alt="Materia Tech Logo">
+            </div>
+            <div class="powered_by_text">
+                Powered by <br>
+                Materia Tech
+            </div>
+        </div>
+        <div class="mail">
+            <a href="mailto:materia.mgmt@yandex.ru?subject=Cyphr">
+                materia.mgmt@yandex.ru
+            </a>
+        </div>
+    </div>
+{% endblock %}

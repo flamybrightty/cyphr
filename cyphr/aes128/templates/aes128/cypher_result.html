@@ -1,0 +1,36 @@
+{% extends 'main/layout.html' %}
+
+{% load static %}
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'css/aes.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font_style.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="main_app">
+        <div class="promo_block">
+            <div class="solution">
+                Cyphr <br>
+                AES128
+            </div>
+            <div class="powered_box">
+                <div class="materia_tech_logo">
+                    <img src="{% static 'img/materia_tech_logo_black.webp' %}" alt="Materia Tech Logo">
+                </div>
+                <div class="powered_by_text">
+                    Powered by <br>
+                    Materia Tech
+                </div>
+            </div>
+        </div>
+        <div class="promo_block">
+            <div class="form">
+                <p>Зашифрованный текст:</p>
+                <textarea readonly>{{ encrypted_text }}</textarea> <br><br>
+                <a href="{% url 'aes128:cypher' %}"><button>Зашифровать новый текст</button></a> <br><br>
+                <a href="{% url 'aes128:decypher' %}"><button>Расшифровать текст</button></a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,385 @@
+@import url("config.css");
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* max-width: 1200px; */
+}
+
+body
+{
+    padding: 0px;
+    /* background-color: white; */
+    /* background-color: black; */
+    /* max-width: 1200px; */
+}
+
+.container
+{
+    margin: 0 auto;
+    /* background-color: white; */
+    /* background-color: black; */
+    /* max-width: 1200px; */
+    width: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.main_app{
+    margin: 40px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.promo_block {
+    position: relative;
+    border-radius: 20px;
+    width: 500px;
+    height: 500px;
+    background-color: black;
+}
+
+.solution{
+    padding: 30px;
+    /* padding-bottom: 220px; */
+    font-size: 55px;
+    font-family: Manrope-ExtraBold, Helvetica;
+    color: var(--extra-text-color);
+}
+
+.powered_box{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+}
+
+.materia_tech_logo img{
+    width: 50px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.powered_by_text{
+    /* padding: 30px; */
+    font-size: 22px;
+    font-family: Manrope-ExtraBold, Helvetica;
+    color: var(--extra-text-color);
+}
+
+.tech_block {
+    border-radius: 20px;
+    width: 500px;
+    height: 500px;
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: var(--default-gap);
+}
+
+.cyphr_info{    
+    border-radius: 20px;
+    background-color: var(--main-text-color);
+    position: relative;
+    transition: var(--block-transition-time);
+}
+
+.cyphr_info_no_hover{    
+    border-radius: 20px;
+    background-color: var(--main-text-color);
+    position: relative;
+    transition: var(--block-transition-time);
+}
+
+.cyphr_info:hover{
+    transform: translate(0, -5px);
+}
+
+.cyphr_info:hover .arrow_box img{
+    transition: var(--arrow-transition-time);
+    width: var(--arrow-size-after);
+}
+
+.name_box{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+}
+
+.cyphr_logo img{
+    width: 130px;
+}
+
+.cyphr_name{
+    font-size: 50px;
+    font-family: Manrope-ExtraBold, Helvetica;
+    color: var(--extra-text-color);
+}
+
+.products{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: var(--default-gap);
+}
+
+.product_name{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    font-size: 25px;
+    font-family: Manrope-ExtraBold, Helvetica;
+    color: var(--extra-text-color);
+}
+
+.cyphr_stego{
+    border-radius: 20px;
+    background-color: var(--main-text-color);
+    position: relative;
+    transition: var(--block-transition-time);
+}
+
+.cyphr_stego:hover{
+    transform: translate(0, -5px);
+}
+
+.cyphr_stego:hover .arrow_box img{
+    transition: var(--arrow-transition-time);
+    width: var(--arrow-size-after);
+}
+
+.cyphr_aes{
+    border-radius: 20px;
+    background-color: var(--main-text-color);
+    position: relative;
+    transition: var(--block-transition-time);
+}
+
+.cyphr_aes:hover{
+    transform: translate(0, -5px);
+}
+
+.cyphr_aes:hover .arrow_box img{
+    transition: var(--arrow-transition-time);
+    width: var(--arrow-size-after);
+}
+
+.arrow_box img{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: var(--arrow-margin);
+    width: var(--arrow-size-default);
+    transition: var(--arrow-transition-time);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.form {
+    background-color: white;
+    padding: 40px;
+    margin: 40px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form input[type="file"] {
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.form button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 12px;
+}
+
+.form button:hover {
+    background-color: rgb(212, 212, 212);
+    color:black;
+}
+
+.form img{
+    width: 200px;
+}
+
+
+
+
+
+
+#cypherForm {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    font-family: Manrope-SemiBold, Helvetica;
+}
+
+/* Стили для сообщения об ошибке */
+#cypherForm p {
+    color: red;
+    font-weight: bold;
+    font-family: Manrope-SemiBold, Helvetica;
+}
+
+/* Стили для текстового ввода */
+#textInput {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: Manrope-SemiBold, Helvetica;
+}
+
+/* Стили для кнопки */
+#submitButton {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: Manrope-SemiBold, Helvetica;
+}
+
+/* Стили для кнопки при наведении */
+#submitButton:hover {
+    background-color: gray;
+}
+
+
+#uploadForm {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    width: 300px;
+    margin: 0 auto;
+    font-family: Manrope-SemiBold, Helvetica;
+}
+
+input[type="file"], input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: Manrope-SemiBold, Helvetica;
+}
+
+
+
+
+
+.form {
+    max-width: 600px; /* Ограничение ширины div */
+    margin: auto; /* Центрирование div на странице */
+    /* padding: 100px; */
+    padding-top: 130px;
+    background-color: black; 
+    border-radius: 10px; /* Скругление углов */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень вокруг div */
+    font-family: Manrope-ExtraBold, Helvetica;
+}
+
+.form p {
+    font-size: 18px; /* Размер шрифта для текста */
+    color: white; /* Цвет текста */
+    margin-bottom: 10px; /* Отступ снизу для текста */
+    font-family: Manrope-SemiBold, Helvetica;
+}
+
+.form textarea {
+    width: 390px; /* Ширина textarea на всю ширину div */
+    height: 100px; /* Высота textarea */
+    padding: 10px; /* Внутренние отступы для textarea */
+    border: 1px solid #ccc; 
+    border-radius: 5px; /* Скругление углов для textarea */
+    resize: none; /* Запрет изменения размера textarea */
+    font-family: Manrope-SemiBold, Helvetica;
+}
+
+.form button {
+    padding: 10px 20px; /* Внутренние отступы для кнопок */
+    margin-right: 10px; /* Отступ справа для кнопок */
+    border: none; /* Убрать границу для кнопок */
+    background-color: white;
+    color: black; /* Цвет текста для кнопок */
+    border-radius: 5px; /* Скругление углов для кнопок */
+    cursor: pointer; /* Курсор в виде указателя */
+    text-decoration: none; /* Убрать подчеркивание текста */
+    font-family: Manrope-SemiBold, Helvetica;
+}
+
+.form button:hover {
+    background-color: gray; /* Цвет фона для кнопок при наведении */
+}
+
+
+
+
+
+
+.form a {
+    display: block;
+    text-align: center; /* Выравнивание текста по центру */
+    text-decoration: none; /* Убрать подчеркивание у ссылок */
+    padding: 10px;
+    margin-top: 10px;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    width: 200px;
+    font-family: Manrope-SemiBold, Helvetica;
+    transition: 0.3s;
+}
+
+.form a:hover {
+    background-color: gray; /* Изменение цвета фона при наведении */
+}

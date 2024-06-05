@@ -1,0 +1,37 @@
+{% extends 'main/layout.html' %}
+
+{% load static %}
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'css/stego.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font_style.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="main_app">
+        <div class="promo_block">
+            <div class="solution">
+                Cyphr <br>
+                STEGO
+            </div>
+            <div class="powered_box">
+                <div class="materia_tech_logo">
+                    <img src="{% static 'img/materia_tech_logo_black.webp' %}" alt="Materia Tech Logo">
+                </div>
+                <div class="powered_by_text">
+                    Powered by <br>
+                    Materia Tech
+                </div>
+            </div>
+        </div>
+        <div class="promo_block">
+            <div class="form">
+                <form id="uploadForm" method="post" enctype="multipart/form-data" action="{% url 'stego:extract_result' %}">
+                    {% csrf_token %}
+                    <input type="file" name="image" accept="image/*"> <br><br>
+                    <button type="submit" id="submitButton">Извлечь текст</button>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

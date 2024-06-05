@@ -1,0 +1,113 @@
+@import url("config.css");
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* max-width: 1200px; */
+}
+
+body
+{
+    padding: 0px;
+    /* background-color: white; */
+    /* background-color: black; */
+    /* max-width: 1200px; */
+}
+
+.container
+{
+    margin: 0 auto;
+    /* background-color: white; */
+    /* background-color: black; */
+    /* max-width: 1200px; */
+    width: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.top_name_box{
+    position: absolute;
+    top:15%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+}
+.top_name_box a{
+    text-decoration: none;
+    font-family: Manrope-ExtraBold, Helvetica;
+}
+.top_name_box a:link {color: black;}
+.top_name_box a:visited {color: black;}
+.top_name_box a:hover {color: var(--main-text-color);}
+.top_name_box a:active {color: var(--main-text-color);}
+
+.cyphr_logo img{
+    width: 100px;
+}
+
+.cyphr_name{
+    font-size: 75px;
+    font-family: Manrope-ExtraBold, Helvetica;
+    color: var(--main-text-color);
+}
+
+.text_box{
+    position: absolute;
+    top:55%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: justify;
+    max-width: 500px;
+    font-size: 18px;
+    font-family: Manrope-SemiBold, Helvetica;
+    color: var(--main-text-color);
+}
+
+.footer{
+    position: absolute;
+    top:90%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+
+.powered_box{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+}
+.materia_tech_logo img{
+    width: 40px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.powered_by_text{
+    /* padding: 30px; */
+    font-size: 17px;
+    font-family: Manrope-ExtraBold, Helvetica;
+    color: var(--main-text-color);
+}
+
+.mail a{
+    text-decoration: none;
+    font-family: Manrope-SemiBold, Helvetica;
+    font-size: 20px;
+}
+.mail a:link {color: black;}
+.mail a:visited {color: black;}
+.mail a:hover {color: var(--hover-text-color);}
+.mail a:active {color: var(--hover-text-color);}
